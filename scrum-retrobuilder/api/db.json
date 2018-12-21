@@ -1,0 +1,15 @@
+{
+  "elements": [
+    {
+      "id": 1,
+      "name": "Eins"
+    },
+    {
+      "id": 2,
+      "name": "Zwei"
+    }, {
+      "id": 3,
+      "name": "Drei"
+    }
+  ]
+}

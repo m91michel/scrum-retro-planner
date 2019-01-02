@@ -18,7 +18,7 @@ export class FirstPageComponent implements OnInit {
 
   private loadData() {
     this.activityService.getData().subscribe(activities => {
-      console.log(activities);
+      console.log(activities.length);
       this.activities = activities;
     });
   }

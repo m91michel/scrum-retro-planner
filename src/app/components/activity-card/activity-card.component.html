@@ -1,6 +1,5 @@
 <mat-card>
 <mat-card-header>
-  <div mat-card-avatar class="example-header-image"></div>
   <mat-card-title>{{activity.name}}</mat-card-title>
   <mat-card-subtitle>#{{activity.id}} - {{activity.subline}}</mat-card-subtitle>
 </mat-card-header>
@@ -8,5 +7,9 @@
   <p>
     {{activity.description}}
   </p>
+    <span>{{activity.sourceName}}</span>
 </mat-card-content>
+<mat-card-actions align="end">
+  <button mat-button (click)="add()">Add to list</button>
+</mat-card-actions>
 </mat-card>

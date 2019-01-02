@@ -16,6 +16,7 @@ import {
   MatCardModule,
   MatListModule,
   MatTabsModule,
+  MatMenuModule,
   MatGridListModule
  } from '@angular/material';
 
@@ -45,6 +46,7 @@ import { ActivityCardComponent } from './components/activity-card/activity-card.
     MatCardModule,
     MatListModule,
     MatTabsModule,
+    MatMenuModule,
     MatGridListModule
   ],
   providers: [],

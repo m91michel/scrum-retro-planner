@@ -1,0 +1,4 @@
+<mat-tab-group mat-stretch-tabs>
+  <mat-tab label="First Tab"><app-first-page></app-first-page></mat-tab>
+  <mat-tab *ngFor="let tab of tabs" label="{{tab.name}}">Content</mat-tab>
+</mat-tab-group>

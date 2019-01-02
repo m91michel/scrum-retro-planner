@@ -7,8 +7,6 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { LayoutModule } from '@angular/cdk/layout';
 
-import { FirstPageComponent } from './components/first-page/first-page.component';
-
 import {
   MatButtonModule,
   MatCheckboxModule,
@@ -16,14 +14,22 @@ import {
   MatSidenavModule,
   MatIconModule,
   MatCardModule,
-  MatListModule
+  MatListModule,
+  MatTabsModule,
+  MatGridListModule
  } from '@angular/material';
+
+import { FirstPageComponent } from './components/first-page/first-page.component';
+import { TabsComponent } from './components/tabs/tabs.component';
+import { ActivityCardComponent } from './components/activity-card/activity-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    FirstPageComponent
+    FirstPageComponent,
+    TabsComponent,
+    ActivityCardComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +43,9 @@ import {
     MatSidenavModule,
     MatIconModule,
     MatCardModule,
-    MatListModule
+    MatListModule,
+    MatTabsModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

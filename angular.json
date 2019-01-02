@@ -18,7 +18,6 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/scrum-retrobuilder",
-            "baseHref": "https://m91michel.github.io/scrum-retrobuilder/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -51,6 +50,7 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
+              "baseHref": "https://m91michel.github.io/scrum-retrobuilder/",
               "budgets": [
                 {
                   "type": "initial",

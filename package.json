@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --serve-path /",
     "build": "ng build --prod --base-href \"https://m91michel.github.io/scrum-retrobuilder/\"",
     "test": "ng test",
     "lint": "ng lint",

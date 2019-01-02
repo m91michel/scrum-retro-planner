@@ -1,12 +1,5 @@
-<mat-card *ngFor="let element of elements"class="example-card">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>{{element.name}}</mat-card-title>
-    <mat-card-subtitle>ID: {{element.id}}</mat-card-subtitle>
-  </mat-card-header>
-  <mat-card-content>
-    <p>
-      {{element | json}}
-    </p>
-  </mat-card-content>
-</mat-card>
+<mat-grid-list cols="1" rowHeight="300px" gutterSize="10px">
+  <mat-grid-tile *ngFor="let activity of activities">
+      <app-activity-card [activity]="activity"></app-activity-card>
+  </mat-grid-tile>
+</mat-grid-list>

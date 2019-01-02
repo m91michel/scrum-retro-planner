@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { JsonTestService } from '../../services/json-test.service';
-import { Element } from '../../models/model';
+import { ActivityService } from '../../services/activity.service';
+import { Activity } from '../../models/model';
 
 @Component({
   selector: 'app-first-page',
@@ -8,18 +8,18 @@ import { Element } from '../../models/model';
   styleUrls: ['./first-page.component.scss']
 })
 export class FirstPageComponent implements OnInit {
-  public elements: Element[];
+  public activities: Activity[];
 
-  constructor(private jsonTestService: JsonTestService) { }
+  constructor(private activityService: ActivityService) { }
 
   ngOnInit() {
     this.loadData();
   }
 
   private loadData() {
-    this.jsonTestService.getData().subscribe(data => {
-      console.log(data);
-      this.elements = data;
+    this.activityService.getData().subscribe(activities => {
+      console.log(activities);
+      this.activities = activities;
     });
   }
 }

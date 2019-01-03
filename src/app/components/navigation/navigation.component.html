@@ -25,7 +25,7 @@
     class="sidenav"
     position="end"
     fixedInViewport="true"
-    [attr.role]="dialog"
+    attr.role="dialog"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="!(isHandset$ | async)">
   <app-sidebar-activity-list></app-sidebar-activity-list>

@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --serve-path /",
-    "build": "ng build --prod --base-href \"https://m91michel.github.io/scrum-retro-planner/\"",
+    "build": "ng build --prod --base-href \"https://m91michel.github.io/scrum-retro-planner/\" && ngh --dir dist/scrum-retrobuilder",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

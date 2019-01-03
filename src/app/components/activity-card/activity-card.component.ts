@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Activity } from '../../models/model';
 import { ActivityListService } from '../../services/activity-list.service';
 
@@ -10,13 +10,14 @@ import { ActivityListService } from '../../services/activity-list.service';
 export class ActivityCardComponent implements OnInit {
   @Input() public activity: Activity;
 
-  constructor(private activityListService: ActivityListService) { }
+  @Output('addAction') public buttonClickEmitter = new EventEmitter<Activity>();
 
-  ngOnInit() {
-  }
+  constructor() { }
 
-  add(): void {
-    this.activityListService.add(this.activity);
+  ngOnInit() { }
+
+  addActivity(): void {
+    this.buttonClickEmitter.emit(this.activity);
   }
 
 }

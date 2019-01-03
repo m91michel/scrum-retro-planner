@@ -1,3 +1,30 @@
-.example-card {
-  margin: 1em;
+.card-header .mat-card-header-text {
+  margin: 0;
+}
+.mat-card-header-text {
+  margin: 0;
+}
+.alignment {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+#checkIn {
+  color: #3F51B5;
+}
+#data {
+  color: #FF4081;
+}
+#insights {
+  color: #4CAF50;
+}
+#decide {
+  color: #7C4DFF;
+}
+#checkOut {
+  color: #03A9F4;
+}
+.mat-standard-chip {
+  padding: 4px 10px;
+  min-height: 27px;
 }

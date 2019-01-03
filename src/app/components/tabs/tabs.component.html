@@ -1,4 +1,14 @@
-<mat-tab-group mat-stretch-tabs>
-  <mat-tab label="First Tab"><app-first-page></app-first-page></mat-tab>
-  <mat-tab *ngFor="let tab of tabs" label="{{tab.name}}">Content</mat-tab>
+<!-- <mat-toolbar color="primary">
+  <span>My Application</span>
+</mat-toolbar> -->
+
+<mat-tab-group mat-stretch-tabs animationDuration="0ms">
+  <mat-tab *ngFor="let tab of tabs">
+    <ng-template mat-tab-label>
+      <span class="{{tab.id}}">{{tab.name}}</span>
+    </ng-template>
+    <ng-template matTabContent>
+      <app-activity-card-list type="{{tab.id}}"></app-activity-card-list>
+    </ng-template>
+  </mat-tab>
 </mat-tab-group>

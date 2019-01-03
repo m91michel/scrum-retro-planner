@@ -8,16 +8,15 @@ import { Tab } from '../../models/model';
 })
 export class TabsComponent implements OnInit {
   public tabs: Tab[] = [
-    {id: 1, name: 'Check In'},
-    {id: 1, name: 'Gather Data'},
-    {id: 1, name: 'Generate Insights'},
-    {id: 1, name: 'Decide What To Do'},
-    {id: 1, name: 'Check Out'}
+    {id: 'checkIn', name: 'Check In'},
+    {id: 'data', name: 'Gather Data'},
+    {id: 'insights', name: 'Generate Insights'},
+    {id: 'decide', name: 'Decide What To Do'},
+    {id: 'checkOut', name: 'Check Out'}
   ];
 
   constructor() { }
 
   ngOnInit() {
   }
-
 }

@@ -8,7 +8,7 @@ export class Elements {
 }
 
 export class Tab {
-  id: number;
+  id: string;
   name: string;
 }
 

@@ -24,6 +24,11 @@ export class ActivityListService {
     return this.activities;
   }
 
+  remove(activity: Activity): void {
+    this.activities = this.activities.filter(a => a !== activity);
+    this.activities$.next(this.activities);
+  }
+
   clear(): void {
     this.activities = [];
     this.activities$.next(this.activities);

@@ -17,20 +17,23 @@ import {
   MatListModule,
   MatTabsModule,
   MatMenuModule,
+  MatChipsModule,
   MatGridListModule
  } from '@angular/material';
 
-import { FirstPageComponent } from './components/first-page/first-page.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { ActivityCardComponent } from './components/activity-card/activity-card.component';
+import { SidebarActivityListComponent } from './components/sidebar-activity-list/sidebar-activity-list.component';
+import { ActivityCardListComponent } from './components/activity-card-list/activity-card-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    FirstPageComponent,
     TabsComponent,
-    ActivityCardComponent
+    ActivityCardComponent,
+    SidebarActivityListComponent,
+    ActivityCardListComponent
   ],
   imports: [
     BrowserModule,
@@ -47,6 +50,7 @@ import { ActivityCardComponent } from './components/activity-card/activity-card.
     MatListModule,
     MatTabsModule,
     MatMenuModule,
+    MatChipsModule,
     MatGridListModule
   ],
   providers: [],

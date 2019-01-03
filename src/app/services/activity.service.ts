@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Activity, Activities } from '../models/model';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { catchError, map, tap } from 'rxjs/operators';
+import { map, publishReplay, refCount, take } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -10,14 +10,18 @@ import { catchError, map, tap } from 'rxjs/operators';
 export class ActivityService {
   private path = './api/activities.json';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+  }
 
-  getData(): Observable<Activity[]> {
+  getActivites(): Observable<Activity[]> {
     return this.http.get<Activities>(this.path)
     .pipe(
       map(res => {
         return res.activities;
-      })
+      }),
+      publishReplay(1),
+      refCount(),
+      take(1),
     );
   }
 }

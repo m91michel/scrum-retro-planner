@@ -16,8 +16,6 @@ export class ActivityStepperComponent implements OnInit {
     {id: 'checkOut', name: 'Check Out'}
   ];
 
-  seasons: string[] = ['Winter', 'Spring', 'Summer', 'Autumn'];
-
   constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() { }

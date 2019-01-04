@@ -31,6 +31,8 @@ import { SidebarActivityListComponent } from './components/sidebar-activity-list
 import { ActivityCardListComponent } from './components/activity-card-list/activity-card-list.component';
 import { ActivityStepperComponent } from './components/activity-stepper/activity-stepper.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
+import { GetStartedComponent } from './components/get-started/get-started.component';
+import { ContributeComponent } from './components/contribute/contribute.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,8 @@ import { NavigationComponent } from './components/navigation/navigation.componen
     SidebarActivityListComponent,
     ActivityCardListComponent,
     ActivityStepperComponent,
-    ActivityRadioControlComponent
+    GetStartedComponent,
+    ContributeComponent,
   ],
   imports: [
     BrowserModule,

@@ -10,13 +10,10 @@
   <mat-card-content>
     <p>{{activity.description}}</p>
     <span></span>
-    <mat-chip-list>
+    <mat-chip-list disabled>
       <mat-chip disabled>{{activity.sourceName}}</mat-chip>
       <mat-chip disabled id="{{activity.type}}">{{activity.type}}</mat-chip>
     </mat-chip-list>
   </mat-card-content>
 
-  <!-- <mat-card-actions align="end">
-    <button mat-button (click)="addActivity()">Add to list</button>
-  </mat-card-actions> -->
 </mat-card>

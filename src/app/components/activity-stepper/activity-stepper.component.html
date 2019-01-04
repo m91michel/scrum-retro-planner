@@ -1,17 +1,14 @@
 <mat-horizontal-stepper #stepper>
+  <!-- <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    <app-activity-radio-control></app-activity-radio-control>
+    <div>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step> -->
+
   <mat-step *ngFor="let tab of tabs">
       <ng-template matStepLabel>{{tab.name}}</ng-template>
       <app-activity-card-list type="{{tab.id}}" (nextStepp)="stepper.next()"></app-activity-card-list>
-  </mat-step>
-
-  <mat-step>
-    <ng-template matStepLabel>Done</ng-template>
-    <mat-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
-      {{season}}
-    </mat-radio-button>
-    <div>
-      <button mat-button matStepperPrevious>Back</button>
-      <button mat-button (click)="stepper.reset()">Reset</button>
-    </div>
   </mat-step>
 </mat-horizontal-stepper>

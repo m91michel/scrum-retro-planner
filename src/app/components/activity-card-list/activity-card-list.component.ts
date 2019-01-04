@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ActivityService } from '../../services/activity.service';
 import { ActivityListService } from '../../services/activity-list.service';
 import { Activity } from '../../models/model';
@@ -12,6 +12,7 @@ import { catchError, map, tap, filter } from 'rxjs/operators';
 export class ActivityCardListComponent implements OnInit {
   public activities: Activity[];
   @Input() type: string = 'checkIn';
+  @Output() nextStepp = new EventEmitter<void>();
 
   constructor(
     private activityService: ActivityService,
@@ -23,8 +24,8 @@ export class ActivityCardListComponent implements OnInit {
   }
 
   addAction(activity: Activity) {
-    console.log('item: ' + activity);
     this.activityListService.add(activity);
+    this.nextStepp.emit();
   }
 
   private getActivites(type: string) {

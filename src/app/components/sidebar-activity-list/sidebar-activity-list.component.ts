@@ -16,6 +16,7 @@ export class SidebarActivityListComponent implements OnInit {
     this.activityListService.activities$.subscribe((activityList: Activity[]) => {
       this.activities = activityList;
     });
+    this.activityListService.get();
   }
 
   removeItem(activity: Activity): void {

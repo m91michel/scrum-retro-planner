@@ -1,0 +1,27 @@
+<mat-toolbar>Your Retrospective</mat-toolbar>
+<section *ngIf="activities.length == 0">
+  <p>Add a Activity item to your Retrospective planner. Click on the add button.</p>
+</section>
+<mat-card *ngFor="let activity of activities">
+    <mat-card-title>{{activity.title}}</mat-card-title>
+    <mat-card-subtitle>#{{activity.id}} - {{activity.subline}}</mat-card-subtitle>
+    <mat-card-actions>
+      <button mat-icon-button color="warn" (click)="removeItem(activity)">
+        <mat-icon aria-label="icon-button with a heart icon">clear</mat-icon>
+      </button>
+    </mat-card-actions>
+</mat-card>
+
+<!-- <mat-list>
+  <mat-list-item *ngFor="let activity of activities">
+    <h3 matLine>{{activity.name}}</h3>
+    <p matLine> {{activity.subline}}</p>
+    <button mat-icon-button color="warn" (click)="removeItem(activity)">
+      <mat-icon aria-label="icon-button with a heart icon">clear</mat-icon>
+    </button>
+  </mat-list-item>
+</mat-list> -->
+<section class="button-container">
+  <button mat-raised-button color="primary">Print</button>
+  <button mat-raised-button (click)="clear()">Remove all</button>
+</section>

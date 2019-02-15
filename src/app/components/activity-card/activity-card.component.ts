@@ -10,14 +10,14 @@ import { ActivityListService } from '../../services/activity-list.service';
 export class ActivityCardComponent implements OnInit {
   @Input() public activity: Activity;
 
-  @Output('addAction') public buttonClickEmitter = new EventEmitter<Activity>();
+  @Output() public addButton = new EventEmitter<Activity>();
 
   constructor() { }
 
   ngOnInit() { }
 
   addActivity(): void {
-    this.buttonClickEmitter.emit(this.activity);
+    this.addButton.emit(this.activity);
   }
 
 }

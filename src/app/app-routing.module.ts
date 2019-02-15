@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ActivityCardListComponent } from './components/activity-card-list/activity-card-list.component';
 import { TabsComponent } from './components/tabs/tabs.component';
-import { ActivityStepperComponent } from './components/activity-stepper/activity-stepper.component'
+import { ActivityStepperComponent } from './components/activity-stepper/activity-stepper.component';
 import { GetStartedComponent } from './components/get-started/get-started.component';
 import { ContributeComponent } from './components/contribute/contribute.component';
 

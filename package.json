@@ -1,6 +1,9 @@
 {
   "name": "scrum-retro-planner",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "homepage": "https://github.com/m91michel/scrum-retro-planner",
+  "author": "Mathias Michel",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --serve-path /",

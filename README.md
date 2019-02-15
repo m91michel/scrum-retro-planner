@@ -1,28 +1,20 @@
-# ScrumRetrobuilder
+# Scrum Retrospective Planner
+This a side project to build a angular project from scratch. My personal goal is to try out new angular feature and new technologies. A second goal is to help scrum masters and people who are planning a retrospective.
 
-## Run localy
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Install dependencies with `npm install`
+- Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Run `node scripts/create_static_api.js` to build the content as static api.
+- Run `npm run-script build` to build the project.
 
 ## Todo
-- License
-- Select a Card
-- Startseite & Tutorial
-- Create real data
-- Safari Performance Bug
-- Eig. Backend nötig
+- Change the UX how to select a card
+- Add more content to Start
+- Add [markdown support](https://github.com/jfcere/ngx-markdown)
+- Add a Tutorial and more information for each activity type
+- Create more data
+- Fix a performance issue for Safari
 
-https://github.com/jfcere/ngx-markdown
+## License
+The content of this project itself is licensed under the [Creative Commons Attribution 3.0 Unported license](https://creativecommons.org/licenses/by/3.0/), and the underlying source code used to transform and display that content is licensed under the [MIT license](LICENSE.md).

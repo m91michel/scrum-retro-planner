@@ -1,3 +1,4 @@
+![buuild](https://travis-ci.com/m91michel/scrum-retro-planner.svg?branch=master)
 # Scrum Retrospective Planner
 This a side project to build a angular project from scratch. My personal goal is to try out new angular feature and new technologies. A second goal is to help scrum masters and people who are planning a retrospective.
 

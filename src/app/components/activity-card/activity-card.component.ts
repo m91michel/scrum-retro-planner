@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Activity } from '../../models/model';
-import { ActivityListService } from '../../services/activity-list.service';
 
 @Component({
   selector: 'app-activity-card',

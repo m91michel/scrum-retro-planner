@@ -16,12 +16,15 @@ before_script:
 
 script:
   - ng lint
+  - npm run test-headless
+  - npm run-script build:content
   - ng build --prod --base-href $base_href
   
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
+  local_dir: dist/
   keep-history: true
   on:
     branch: master

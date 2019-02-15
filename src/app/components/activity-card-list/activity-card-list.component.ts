@@ -11,7 +11,7 @@ import { catchError, map, tap, filter } from 'rxjs/operators';
 })
 export class ActivityCardListComponent implements OnInit {
   public activities: Activity[];
-  @Input() type: string = 'checkIn';
+  @Input() type = 'checkIn';
   @Output() nextStepp = new EventEmitter<void>();
 
   constructor(
@@ -31,7 +31,7 @@ export class ActivityCardListComponent implements OnInit {
   private getActivites(type: string) {
     this.activityService.getActivites()
       .pipe(
-        map(list => list.filter(a => a.type == type))
+        map(list => list.filter(a => a.type === type))
       )
       .subscribe(activities => {
         console.log('type: ' + this.type + ' - ' + activities.length);

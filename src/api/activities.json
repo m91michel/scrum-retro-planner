@@ -1,76 +1,55 @@
 {
-  "activities": [
-    {
-      "id": 1,
-      "name": "Check In - Draw the Iteration",
-      "subline": "Participants draw some aspect of the iteration ",
-      "description": "Distribute index cards and markers. Set a topic, e.g. one of the following: \nHow did you feel during the iteration?\nWhat was the most remarkable moment?\nWhat was the biggest problem?\nWhat did you long for?\nIf the last iteration had been a circus performance, what part did you play? Juggler, funambulist, clown, knife-thrower, ...\nAsk the team members to draw their answer. Post all drawings on a whiteboard. For each drawing let people guess what it means, before the artist explains it. Metaphors open new viewpoints and create a shared understanding.",
-      "sourceName": "Agile Retrospectives",
-      "sourceUrl": "#",
-      "type": "checkIn"
-    },
-    {
-      "id": 11,
-      "name": "Check In - Draw the Iteration",
-      "subline": "Participants draw some aspect of the iteration ",
-      "description": "Distribute index cards and markers. Set a topic, e.g. one of the following: \nHow did you feel during the iteration?\nWhat was the most remarkable moment?\nWhat was the biggest problem?\nWhat did you long for?\nIf the last iteration had been a circus performance, what part did you play? Juggler, funambulist, clown, knife-thrower, ...\nAsk the team members to draw their answer. Post all drawings on a whiteboard. For each drawing let people guess what it means, before the artist explains it. Metaphors open new viewpoints and create a shared understanding.",
-      "sourceName": "Agile Retrospectives",
-      "sourceUrl": "#",
-      "type": "checkIn"
-    },
-    {
-      "id": 12,
-      "name": "Check In - Draw the Iteration",
-      "subline": "Participants draw some aspect of the iteration ",
-      "description": "Distribute index cards and markers. Set a topic, e.g. one of the following: \nHow did you feel during the iteration?\nWhat was the most remarkable moment?\nWhat was the biggest problem?\nWhat did you long for?\nIf the last iteration had been a circus performance, what part did you play? Juggler, funambulist, clown, knife-thrower, ...\nAsk the team members to draw their answer. Post all drawings on a whiteboard. For each drawing let people guess what it means, before the artist explains it. Metaphors open new viewpoints and create a shared understanding.",
-      "sourceName": "Agile Retrospectives",
-      "sourceUrl": "#",
-      "type": "checkIn"
-    },
-    {
-      "id": 2,
-      "name": "Gather Data - Draw the Iteration",
-      "subline": "Participants draw some aspect of the iteration ",
-      "description": "Distribute index cards and markers. Set a topic, e.g. one of the following: \nHow did you feel during the iteration?\nWhat was the most remarkable moment?\nWhat was the biggest problem?\nWhat did you long for?\nIf the last iteration had been a circus performance, what part did you play? Juggler, funambulist, clown, knife-thrower, ...\nAsk the team members to draw their answer. Post all drawings on a whiteboard. For each drawing let people guess what it means, before the artist explains it. Metaphors open new viewpoints and create a shared understanding.",
-      "sourceName": "Agile Retrospectives",
-      "sourceUrl": "#",
-      "type": "data"
-    },
-    {
-      "id": 3,
-      "name": "get Insights - Draw the Iteration",
-      "subline": "Participants draw some aspect of the iteration ",
-      "description": "Distribute index cards and markers. Set a topic, e.g. one of the following: \nHow did you feel during the iteration?\nWhat was the most remarkable moment?\nWhat was the biggest problem?\nWhat did you long for?\nIf the last iteration had been a circus performance, what part did you play? Juggler, funambulist, clown, knife-thrower, ...\nAsk the team members to draw their answer. Post all drawings on a whiteboard. For each drawing let people guess what it means, before the artist explains it. Metaphors open new viewpoints and create a shared understanding.",
-      "sourceName": "Agile Retrospectives",
-      "sourceUrl": "#",
-      "type": "insights"
-    },
-    {
-      "id": 4,
-      "name": "Decide what to do - Draw the Iteration",
-      "subline": "Participants draw some aspect of the iteration ",
-      "description": "Distribute index cards and markers. Set a topic, e.g. one of the following: \nHow did you feel during the iteration?\nWhat was the most remarkable moment?\nWhat was the biggest problem?\nWhat did you long for?\nIf the last iteration had been a circus performance, what part did you play? Juggler, funambulist, clown, knife-thrower, ...\nAsk the team members to draw their answer. Post all drawings on a whiteboard. For each drawing let people guess what it means, before the artist explains it. Metaphors open new viewpoints and create a shared understanding.",
-      "sourceName": "Agile Retrospectives",
-      "sourceUrl": "#",
-      "type": "decide"
-    },
-    {
-      "id": 5,
-      "name": "2 Check Out - Dot method",
-      "subline": "Participants draw do a dot",
-      "description": "Distribute index cards and markers. Set a topic, e.g. one of the following: \nHow did you feel during the iteration?\nWhat was the most remarkable moment?\nWhat was the biggest problem?\nWhat did you long for?\nIf the last iteration had been a circus performance, what part did you play? Juggler, funambulist, clown, knife-thrower, ...\nAsk the team members to draw their answer. Post all drawings on a whiteboard. For each drawing let people guess what it means, before the artist explains it. Metaphors open new viewpoints and create a shared understanding.",
-      "sourceName": "Agile Retrospectives",
-      "sourceUrl": "#",
-      "type": "checkOut"
-    },
-    {
-      "id": 6,
-      "name": "1 Check Out - Draw the Iteration",
-      "subline": "Participants draw some aspect of the iteration ",
-      "description": "Distribute index cards and markers. Set a topic, e.g. one of the following: \nHow did you feel during the iteration?\nWhat was the most remarkable moment?\nWhat was the biggest problem?\nWhat did you long for?\nIf the last iteration had been a circus performance, what part did you play? Juggler, funambulist, clown, knife-thrower, ...\nAsk the team members to draw their answer. Post all drawings on a whiteboard. For each drawing let people guess what it means, before the artist explains it. Metaphors open new viewpoints and create a shared understanding.",
-      "sourceName": "Agile Retrospectives",
-      "sourceUrl": "#",
-      "type": "checkOut"
-    }
-  ]
+  "results": [{
+    "id": 1,
+    "title": "ESVP",
+    "subline": "How do participants feel at the retro: Explorer, Shopper, Vacationer, or Prisoner?",
+    "type": "CHECK_IN",
+    "sourceName": "Agile Retrospectives",
+    "sourceUrl": "#",
+    "description": "Prepare a flipchart with areas for E, S, V, and P. Explain the concept:  - Explorer: Eager to dive in and research what did and didn't work and how to improve. - Shopper: Positive attitude. Happy if one good things comes out. - Vacationer: Reluctant to actively take part but the retro beats the regular work. - Prisoner: Only attend because they (feel they) must."
+  }, {
+    "id": 100,
+    "title": "Titel of your activity",
+    "subline": "Short description",
+    "type": "(CHECK_IN | GATHER_DATA | GET_INSIGHTS | DECIDE | CHECK_OUT)",
+    "sourceName": "Agile Retrospectives",
+    "sourceUrl": "http://google.de",
+    "description": "LONG Description kdjfnsdaf sdklfnölksdaf lksdjfnklsad dlskfjnasd kfalsjdnflkajsd alksjdfnlkajsndf"
+  }, {
+    "id": 11,
+    "title": "Dot Voting - Start, Stop, Continue",
+    "subline": "Brainstorm what to start, stop & continue and pick the top initiatives",
+    "type": "DECIDE",
+    "sourceName": "Agile Retrospectives",
+    "sourceUrl": "#",
+    "description": "Divide a flip chart into boxes headed with 'Start', 'Continue' and 'Stop'.  Ask your participants to write concrete proposals for each category  - 1 idea per index card. Let them write in silence for a few minutes.  Let everyone read out their notes and post them to the appropriate category.  Lead a short discussion on what the top 20% beneficial ideas are.  Vote on it by distributing dotsor X's with a marker, e.g. 1, 2, and 3 dots for  each person to distribute. The top 2 or 3 become your action items."
+  }, {
+    "id": 15,
+    "title": "Feedback Door - Numbers",
+    "subline": "Gauge participants' satisfaction with the retro on a scale from 1 to 5 in minimum time",
+    "type": "CHECK_OUT",
+    "sourceName": "Agile Retrospectives",
+    "sourceUrl": "#",
+    "description": "Put sticky notes on the door with the numbers 1 through 5 on them.  1 is the topmost and best, 5 the lowest and worst.When ending the retrospective,  ask your participants to put a sticky to the number they feel reflects the session.  The sticky can be empty or have a comment or suggestion on it."
+  }, {
+    "id": 4,
+    "title": "Timeline",
+    "subline": "Participants write down significant events and order them chronologically",
+    "type": "GATHER_DATA",
+    "sourceName": "Agile Retrospectives",
+    "sourceUrl": "#",
+    "description": "Divide into groups with 5 or less people each. Distribute cards and markers. Give participants 10min to note down memorable and / or personally significant events. It's about gathering many perspectives. Consensus would be detrimental. All participants post their cards and order them. It's okay to add cards on the fly. Analyze. Color Coding can help to see patterns, e.g.: - Emotions - Events (technical, organization, people, ...) - Function (tester, developer, manager, ...)"
+  }, {
+    "id": 5,
+    "title": "5 Whys",
+    "subline": "Drill down to the root cause of problems by repeatedly asking 'Why?'",
+    "type": "GET_INSIGHTS",
+    "sourceName": "Agile Retrospectives",
+    "sourceUrl": "#",
+    "description": "Divide the participants into small groups (<= 4 people) and give each group one of the top identified issues. Instructions for the group: One person asks the others 'Why did that happen?' repeatedly to find the root cause or a chain of events Record the root causes (often the answer to the 5th 'Why?') Let the groups share their findings."
+  }],
+  "metadata": {
+    "itemsPerPage": 500,
+    "pages": 1
+  }
 }

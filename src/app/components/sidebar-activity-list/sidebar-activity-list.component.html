@@ -3,7 +3,7 @@
   <p>Add a Activity item to your Retrospective planner. Click on the add button.</p>
 </section>
 <mat-card *ngFor="let activity of activities">
-    <mat-card-title>{{activity.name}}</mat-card-title>
+    <mat-card-title>{{activity.title}}</mat-card-title>
     <mat-card-subtitle>#{{activity.id}} - {{activity.subline}}</mat-card-subtitle>
     <mat-card-actions>
       <button mat-icon-button color="warn" (click)="removeItem(activity)">

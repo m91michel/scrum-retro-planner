@@ -9,11 +9,11 @@ import { Tab } from '../../models/model';
 })
 export class ActivityStepperComponent implements OnInit {
   public tabs: Tab[] = [
-    {id: 'checkIn', name: 'Check In'},
-    {id: 'data', name: 'Gather Data'},
-    {id: 'insights', name: 'Generate Insights'},
-    {id: 'decide', name: 'Decide What To Do'},
-    {id: 'checkOut', name: 'Check Out'}
+    {id: 'CHECK_IN', name: 'Check In'},
+    {id: 'GATHER_DATA', name: 'Gather Data'},
+    {id: 'GET_INSIGHTS', name: 'Generate Insights'},
+    {id: 'DECIDE', name: 'Decide What To Do'},
+    {id: 'CHECK_OUT', name: 'Check Out'}
   ];
 
   constructor(private formBuilder: FormBuilder) { }

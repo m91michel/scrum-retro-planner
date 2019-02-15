@@ -14,7 +14,7 @@ export class Tab {
 
 export class Activity {
   id: number;
-  name: string;
+  title: string;
   subline: string;
   description: string;
   sourceName: string;
@@ -23,5 +23,5 @@ export class Activity {
 }
 
 export class Activities {
-  activities: Activity[];
+  results: Activity[];
 }

@@ -7,7 +7,7 @@
     "build": "ng build --prod --base-href \"https://m91michel.github.io/scrum-retro-planner/\"",
     "test": "ng test",
     "lint": "ng lint",
-    "postbuild": "node create_static_api.js && ngh --dir dist",
+    "postbuild": "node scripts/create_static_api.js && ngh --dir dist",
     "e2e": "ng e2e"
   },
   "private": true,

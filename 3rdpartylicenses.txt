@@ -350,12 +350,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-@angular/material/card
-
 @angular/animations
 MIT
 
 @angular/material/button
+
+@angular/material/card
 
 @angular/material/icon
 
@@ -365,6 +365,10 @@ MIT
 @angular/material/chips
 
 @angular/material/tabs
+
+@angular/material/stepper
+
+@angular/material/form-field
 
 @angular/material/sidenav
 

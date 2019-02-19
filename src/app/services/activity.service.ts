@@ -12,7 +12,7 @@ export class ActivityService {
 
   constructor(private http: HttpClient) { }
 
-  getActivites(): Observable<Activity[]> {
+  getActivities(): Observable<Activity[]> {
     return this.http.get<Activities>(this.path)
     .pipe(
       map(res => {

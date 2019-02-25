@@ -1,8 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { Activity } from '../../models/model';
 
 import { ActivityCardListComponent } from './activity-card-list.component';
 
-describe('ActivityCardListComponent', () => {
+xdescribe('ActivityCardListComponent', () => {
   let component: ActivityCardListComponent;
   let fixture: ComponentFixture<ActivityCardListComponent>;
 

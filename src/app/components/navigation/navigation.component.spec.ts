@@ -10,6 +10,7 @@ import {
 } from '@angular/material';
 
 import { NavigationComponent } from './navigation.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 xdescribe('NavigationComponent', () => {
   let component: NavigationComponent;
@@ -26,7 +27,8 @@ xdescribe('NavigationComponent', () => {
         MatListModule,
         MatSidenavModule,
         MatToolbarModule,
-      ]
+      ],
+      schemas: [ NO_ERRORS_SCHEMA ]
     }).compileComponents();
   }));
 

@@ -10,8 +10,8 @@ describe('ActivityService', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule],
-      providers: [ActivityService]
+        imports: [HttpClientTestingModule],
+        providers: [ActivityService]
     });
     injector = getTestBed();
     service = injector.get(ActivityService);

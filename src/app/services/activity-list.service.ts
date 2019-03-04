@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
-import { Activity } from '../models/model';
+import { Activity } from '@app/models/model';
 
 @Injectable({
   providedIn: 'root'
@@ -17,13 +17,12 @@ export class ActivityListService {
     this.activities$.next(this.activities);
   }
 
-  get(): Activity[] {
+  loadSessionStorage() {
     const session = sessionStorage.getItem('activities');
     if (session !== null) {
       this.activities = JSON.parse(session);
       this.activities$.next(this.activities);
     }
-    return this.activities;
   }
 
   remove(activity: Activity): void {

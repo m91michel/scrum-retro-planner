@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivityListService } from '../../services/activity-list.service';
-import { Activity } from '../../models/model';
+import { ActivityListService } from '@app/services/activity-list.service';
+import { Activity } from '@app/models/model';
 
 @Component({
   selector: 'app-sidebar-activity-list',
@@ -8,22 +8,22 @@ import { Activity } from '../../models/model';
   styleUrls: ['./sidebar-activity-list.component.scss']
 })
 export class SidebarActivityListComponent implements OnInit {
-  public activities: Activity[] = [];
+    public activities: Activity[] = [];
 
-  constructor(private activityListService: ActivityListService) { }
+    constructor(private activityListService: ActivityListService) {}
 
-  ngOnInit() {
-    this.activityListService.activities$.subscribe((activityList: Activity[]) => {
-      this.activities = activityList;
-    });
-    this.activityListService.get();
-  }
+    ngOnInit() {
+        this.activityListService.activities$.subscribe((activityList: Activity[]) => {
+            this.activities = activityList;
+        });
+        this.activityListService.loadSessionStorage();
+    }
 
-  removeItem(activity: Activity): void {
-    this.activityListService.remove(activity);
-  }
+    removeItem(activity: Activity): void {
+        this.activityListService.remove(activity);
+    }
 
-  clear(): void {
-    this.activityListService.clear();
-  }
+    clear(): void {
+        this.activityListService.clear();
+    }
 }

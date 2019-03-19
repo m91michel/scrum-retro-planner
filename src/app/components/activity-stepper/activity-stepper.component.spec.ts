@@ -1,14 +1,17 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ActivityStepperComponent } from './activity-stepper.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
-xdescribe('ActivityStepperComponent', () => {
+
+describe('ActivityStepperComponent', () => {
   let component: ActivityStepperComponent;
   let fixture: ComponentFixture<ActivityStepperComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ActivityStepperComponent ]
+      declarations: [ ActivityStepperComponent ],
+      schemas: [ NO_ERRORS_SCHEMA ]
     })
     .compileComponents();
   }));

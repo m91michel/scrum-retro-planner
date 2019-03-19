@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { Activity, Activities } from '../models/model';
-import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 import { map, publishReplay, refCount, take } from 'rxjs/operators';
+import { Activity, Activities } from '@app/models/model';
 
 @Injectable({
   providedIn: 'root'

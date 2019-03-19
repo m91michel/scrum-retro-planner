@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Tab } from '../../models/model';
 
 @Component({
@@ -16,7 +15,7 @@ export class ActivityStepperComponent implements OnInit {
     {id: 'CHECK_OUT', name: 'Check Out'}
   ];
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor( ) { }
 
   ngOnInit() { }
 

@@ -22,7 +22,8 @@ import {
   MatFormFieldModule,
   MatInputModule,
   MatRadioModule,
-  MatStepperModule
+  MatStepperModule,
+  MatBadgeModule
  } from '@angular/material';
 
 import { TabsComponent } from './components/tabs/tabs.component';
@@ -68,7 +69,8 @@ import { ContributeComponent } from './components/contribute/contribute.componen
     MatFormFieldModule,
     MatInputModule,
     MatRadioModule,
-    MatStepperModule
+    MatStepperModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

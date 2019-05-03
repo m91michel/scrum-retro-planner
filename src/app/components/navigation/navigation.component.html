@@ -3,18 +3,12 @@
     <mat-toolbar color="primary" [class.mat-elevation-z6]="true">
       <span>Scrum Retro Planner</span>
       <span class="remaining-space"></span>
-      <button type="button" mat-icon-button [matMenuTriggerFor]="appMenu">
-        <mat-icon aria-label="Info icon">info_outline</mat-icon>
-      </button>
+      <button type="button" mat-button routerLink="/">Intro</button>
+      <button type="button" mat-button routerLink="/stepper">Activities</button>
+      <button type="button" mat-button routerLink="/contribute">Contribute</button>
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        <mat-icon aria-label="Side nav toggle icon" matBadge="{{activitySelectedCount > 0 ? activitySelectedCount : ''}}" matBadgeColor="accent">menu</mat-icon>
       </button>
-      <mat-menu #appMenu="matMenu">
-        <button mat-menu-item routerLink="/">Start</button>
-        <button mat-menu-item routerLink="/stepper">Stepper</button>
-        <button mat-menu-item routerLink="/contribute">Contribute</button>
-        <button mat-menu-item>Help</button>
-      </mat-menu>
     </mat-toolbar>
 
     <router-outlet></router-outlet>
@@ -26,7 +20,7 @@
     fixedInViewport="true"
     attr.role="dialog"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
-    [opened]="!(isHandset$ | async)">
+    [opened]="false">
   <app-sidebar-activity-list></app-sidebar-activity-list>
   </mat-sidenav>
 </mat-sidenav-container>

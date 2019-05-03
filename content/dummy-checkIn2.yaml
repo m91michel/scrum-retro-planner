@@ -1,0 +1,7 @@
+id: 1234
+title: Dummy for the activity Check In
+subline: "Short summary about this activity "
+type: CHECK_IN
+sourceName: Agile Retrospectives
+sourceUrl: "#"
+description: "How does this activity work?"

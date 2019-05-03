@@ -1,0 +1,7 @@
+id: 132
+title: Dummy activity
+subline: "Short summary about this activity "
+type: GET_INSIGHTS
+sourceName: Agile Retrospectives
+sourceUrl: "#"
+description: "How does this activity work?"

@@ -9,6 +9,6 @@
 
   <mat-step *ngFor="let tab of tabs">
       <ng-template matStepLabel>{{tab.name}}</ng-template>
-      <app-activity-card-list type="{{tab.id}}" (nextStepp)="stepper.next()"></app-activity-card-list>
+      <app-activity-card-list type="{{tab.id}}" (nextStep)="stepper.next()"></app-activity-card-list>
   </mat-step>
 </mat-horizontal-stepper>
